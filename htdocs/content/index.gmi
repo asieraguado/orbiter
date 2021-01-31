@@ -1,0 +1,5 @@
+# It works!
+
+You can modify this default home page by editing the files in your `content` directory.
+
+=> readme.gmi Read Me
