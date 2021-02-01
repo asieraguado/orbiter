@@ -13,7 +13,7 @@ class Router {
     public function serve_current_path() {
         $config = include('config.php');
 
-        if (str_contains($this->request_uri, "..")) {
+        if (strstr($this->request_uri, "..")) {
             // Disallow navigating into parent directories.
             $this->error_404();
         }
