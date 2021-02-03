@@ -1,0 +1,56 @@
+# Orbiter Syntax Guide
+
+This quick guide will help you getting started with the text/gemini markup language. This syntax has much in common with Markdown, but it is more simple and it has less formatting features.
+
+## File format
+
+Create your files with the extension ".gmi" or ".gemini" and Orbiter will detect them as Gemini files.
+
+## Text
+
+Anything you write, if it doesn't mach any other line definition, will be recognized as a text line. One single line is presented as a single paragraph, where the text is split at white spaces when the line is longer than the maximum width. Starting a new line means that the text in the new line will be presented in the next line. One empty line has no special meaning: it will be presented as an empty line as well. Consecutive empty lines are not collapsed: there will be more empty space for each line break.
+
+In order to make the files easier to read and write, you can configure your text editor to wrap the lines at the end of the editing box.
+
+## Links
+
+Lines beginning with the two characters "=>" are link lines, which have the following syntax:
+```
+=>[<whitespace>]<URL>[<whitespace><USER-FRIENDLY LINK NAME>]
+```
+
+## Headings
+
+Lines beginning with "#" are heading lines. The number of # characters indicates the "level" of header; #, ## and ### are analogous to <h1>, <h2> and <h3> in HTML.
+```
+# Heading 1
+## Heading 2
+### Heading 3
+```
+
+## Lists
+
+Lines beginning with "* " are unordered list items. They will be presented as a bullet point list.
+```
+To do list:
+* Organize trip
+* Buy a plane ticket
+* Book a hotel
+```
+
+## Quotes
+
+Lines beginning with ">" are quote lines.
+```
+> I have no special talent. I am only passionately curious.
+Albert Einstein
+```
+
+## Preformatted blocks
+
+Any line whose first three characters are "```" (i.e. three consecutive back ticks with no leading whitespace) are preformatted toggle lines. The text between two preformatted toggle lines will not be formatted: you can use this for source code or ASCII art.
+
+
+# Reference
+
+=> https://gemini.circumlunar.space/docs/specification.html Gemini protocol specification

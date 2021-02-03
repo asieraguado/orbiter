@@ -1,5 +1,7 @@
 # It works!
 
-You can modify this default home page by editing the files in your `content` directory.
+You can modify this default home page by editing the files in your 'content' directory.
 
-=> readme.gmi Read Me
+Check out the included Syntax Guide if you need help for writing your pages.
+
+=> syntax-guide.gmi Orbiter Syntax Guide
