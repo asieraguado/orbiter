@@ -77,7 +77,7 @@ $this->output
     }
 
     private function parse_line() {
-        $line = fgets($this->file);
+        $line = str_replace("<", "&lt;", fgets($this->file));
         if (!$line) {
             if ($this->block == BlockTypes::preformatted) {
                 $this->output .= "</pre>";
